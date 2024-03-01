@@ -1,0 +1,258 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang-="en">
+  <head>
+    <title>Coding</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charse="utf-8">
+  <body>
+    <nav id="navbar">
+      <div class="navigation column left-column">
+        <header>Coding Languages</header>
+        <ul>
+          <li><a href="#python" class="nav-link">Python</a></li>
+          <li><a href="#c++" class="nav-link">C++</a></li>
+          <li><a href="#c#" class="nav-link">C#</a></li>
+          <li><a href="#java" class="nav-link">Java</a></li>
+          <li><a href="#javascript" class="nav-link">JavaScript</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main-doc" class="column right-column">
+      <section class="main-section" id="python">
+        <header>Python</header>
+        <p>A versatile and readable programming language known for its simplicity and extensive library support. With clean syntax and a vibrant community, Python enables rapid development across diverse domains.</p>
+        <div class="code"><pre><code>print("Hello, World!")
+</code></pre></div>
+        <p class="code-caption">Python is arguably one of the easiest coding languages to read as seen above. It is pretty easy to intuit the meaning of the code provided.</p>
+        <p>Characteristics: </p>
+        <ul>
+          <li>Python is dynamically typed, meaning you don't need to declare the type of a variable when you create one.</li>
+          <li>Python is an interpreted language, meaning that code is executed line by line by an interpreter, rather than compiled into machine code before execution.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="c++">
+        <header>C++</header>
+        <p>A powerful and flexible programming language prized for its performance and versatility. With its rich feature set and emphasis on efficiency, C++ empowers developers to create high-performance software across various domains, from systems programming to game development</p>
+        <div class="code"><pre><code>#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hello, World!" << endl;
+    return 0;
+}
+</code></pre></div>
+        <p class="code-caption">In C++, all code must be enclosed within a function, typically the main function. It is also more difficult to naturally intuit it's meaning.</p>
+        <p>Characteristics: </p>
+        <ul>
+          <li>C++ offers high performance and fine-grained control over system resources.</li>
+          <li> C++ is statically typed, requiring variable types to be declared at compile time.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="c#">
+        <header>C#</header>
+        <p>A robust and modern programming language recognized for its simplicity and versatility. With its intuitive syntax and extensive framework support, C# enables developers to build scalable and secure applications for a wide range of platforms, including web, desktop, mobile, and gaming.</p>
+        <div class="code"><pre><code>using System;
+
+class Program {
+    static void Main(string[] args) {
+        Console.WriteLine("Hello, World!");
+    }
+}
+</code></pre></div>
+        <p class="code-caption">Like C++, C# requires all code to be inside of a function, but it also requires all functions to be inside of a class. </p>
+        <p>Characteristics: </p>
+        <ul>
+          <li>C# is a managed language, which means it utilizes automatic memory management through a garbage collector. </li>
+          <li> C# is tightly integrated with the .NET Framework, providing access to a vast library of classes and APIs.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="java">
+        <header>Java</header>
+        <p>A widely-used programming language celebrated for its platform independence and simplicity. With its "write once, run anywhere" philosophy, Java enables developers to create applications that can run seamlessly on any device with a Java Virtual Machine. Known for its strong community support and extensive library ecosystem, Java is ideal for building enterprise-grade software, mobile apps, and web services with reliability and scalability.</p>
+        <div class="code"><pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+</code></pre></div>
+        <p class="code-caption">Most similar to C#, Java also requires a function as well as a class for it's code. </p>
+        <p>Characteristics: </p>
+        <ul>
+          <li>Java programs are compiled into an intermediate bytecode that can run on any device with a Java Virtual Machine (JVM).</li>
+          <li>Java is a statically typed language, requiring all variables to have a declared type at compile time.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="javascript">
+        <header>JavaScript</header>
+        <p>An indispensable language in web development, is prized for its dynamic capabilities and adaptability. It facilitates the creation of interactive and responsive applications, seamlessly bridging the gap between client and server-side scripting. With its widespread use and robust ecosystem, JavaScript continues to evolve as a cornerstone of modern web development.</p>
+        <div class="code"><pre><code>console.log("Hello, World!");
+</code></pre></div>
+        <p class="code-caption">In this case similar to Python, JavaScript can be performed in one line as seen above.</p>
+        <p>Characteristics: </p>
+        <ul>
+          <li> JavaScript is inherently asynchronous and event-driven, allowing for non-blocking execution of code</li>
+          <li>Unlike traditional class-based object-oriented languages, JavaScript utilizes a prototype-based inheritance model.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+.column {
+  float: left;
+  position: absolute;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: #f8f8ff;
+  width: 300px;
+  height: 100%;
+  border-right: 5px solid #484848;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.right-column {
+  display: column;
+  position: absolute;
+  background-color: #f8f8ff;
+  width: 88%;
+  left: 305;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+
+  .left-column {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%; 
+    height: auto; 
+    border: none;
+    border-bottom: 5px solid #484848;
+    top: 0;
+  }
+  
+  .right-column {
+    width: 100%;
+    left: 0;
+    top: auto;
+    margin-top: 0;
+  }
+
+  #navbar {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+  }
+
+  #navbar header {
+    border-bottom: none !important;
+    padding-left: 2% !important;
+  }
+
+  #navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #navbar li a {
+    border-bottom: none !important;
+    padding: 0px 0px 0px 10px !important;
+  }
+
+  #navbar li:first-of-type a {
+    margin-top: 0px !important;
+  }
+
+  .main-section:first-child {
+    padding-top: 70px !important;
+  }
+}
+
+#navbar header {
+  font-weight: bold;
+  overflow: wrap;
+  font-size: 2rem;
+  position: sticky;
+  padding: 10px;
+  border-bottom: 3px solid #484848;
+  padding-left: 7%;
+}
+
+#navbar ul {
+  padding-left: 0px;
+}
+
+#navbar li {
+  list-style-type: none;
+}
+
+#navbar li a{
+  color: black;
+  position: sticky;
+  display: flex;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-bottom: 3px solid #484848;
+  padding-left: 7%;
+}
+
+#navbar li a:hover {
+  color: #808080;
+}
+
+#navbar li:first-of-type a {
+  margin-top: -15px;
+}
+
+.main-section {
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.main-section header {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.main-section p:not(.code-caption){
+  font-size: 1.5rem;
+  width: 70%;
+  overflow: wrap;
+}
+
+.code code {
+  color: white;
+  flex: 1;
+}
+
+.code{
+  background-color: black;
+  display: inline-block;
+  align-items: center; 
+  padding: 8px;
+}
+
+.code pre {
+  margin: 0;
+}
+
+.list-caption {
+  font-size: 1.5rem;
+}
+
+** end of undefined **
+
