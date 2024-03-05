@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">A survey to gather data about tech job hunting.</p>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name: <input id="name" type="text" required placeholder="Enter name"></label>
+      <label for="email" id="email-label">Email: <input id="email" type="email" required placeholder="Enter email"></label>
+      <label for="number" id="number-label">How many entry level jobs have you seen that require experience? <input id="number" type="number" min="100" max="1000000" placeholder="Enter number"></label>
+      <label for="dropdown">How horrible is the job hunting experience?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Bad</option>
+          <option value="2">Very Bad</option>
+          <option value="3">I'm going crazy</option>
+        </select>
+      </label>
+      <hr>
+      <label for="education" class="education-label">What is your highest level of education?</label>
+      <br>
+      <label for="bachelor"><input id="bachelor" type="radio" name="education" class="radio" value="0" checked>Bachelor's</label>
+      <br>
+      <label for="master"><input id="master" type="radio" name="education" class="radio" value="1">Master's</label>
+      <br>
+      <label for="doctor"><input id="doctor" type="radio" name="education" class="radio" value="2">Doctorate</label>
+      <hr>
+      <label for="checkboxes">What coding languages are you proficient in?</label>
+      <br>
+        <label for="python"><input type="checkbox" value="python" class="checkbox">Python</label>
+        <label for="c"><input type="checkbox" value="c" class="checkbox">C</label>
+        <label for="cpp"><input type="checkbox" value="cpp" class="checkbox">C++</label>
+        <label for="csharp"><input type="checkbox" value="csharp" class="checkbox">C#</label>
+        <label for="java"><input type="checkbox" value="java" class="checkbox">Java</label>
+        <label for="go"><input type="checkbox" value="go" class="checkbox">Go</label>
+        <hr>
+        <textarea>Additional comments . . .</textarea>
+        <hr>
+        <input type="submit" id="submit" value="Submit" class="submit">
+    </fieldset>
+  </form>
+</body>
+</html>

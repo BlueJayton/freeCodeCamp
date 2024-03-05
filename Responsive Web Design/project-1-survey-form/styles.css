@@ -1,0 +1,29 @@
+input,
+select {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+.radio {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+.checkbox {
+  width: unset;
+  margin: 0 0.5em 0 1em;
+  vertical-align: middle;
+}
+
+.submit {
+  width: 100px;
+  background-color: #0000BB;
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+}

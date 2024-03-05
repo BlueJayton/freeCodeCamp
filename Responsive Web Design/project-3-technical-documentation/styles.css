@@ -1,0 +1,150 @@
+
+.column {
+    float: left;
+    position: absolute;
+  }
+  
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #f8f8ff;
+    width: 300px;
+    height: 100%;
+    border-right: 5px solid #484848;
+    left: 0;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .right-column {
+    display: column;
+    position: absolute;
+    background-color: #f8f8ff;
+    width: 88%;
+    left: 305;
+    top: 0;
+  }
+  
+  @media (max-width: 768px) {
+  
+    .left-column {
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      width: 100%; 
+      height: auto; 
+      border: none;
+      border-bottom: 5px solid #484848;
+      top: 0;
+    }
+    
+    .right-column {
+      width: 100%;
+      left: 0;
+      top: auto;
+      margin-top: 0;
+    }
+  
+    #navbar {
+      position: relative;
+      width: 100%;
+      z-index: 999;
+    }
+  
+    #navbar header {
+      border-bottom: none !important;
+      padding-left: 2% !important;
+    }
+  
+    #navbar ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    #navbar li a {
+      border-bottom: none !important;
+      padding: 0px 0px 0px 10px !important;
+    }
+  
+    #navbar li:first-of-type a {
+      margin-top: 0px !important;
+    }
+  
+    .main-section:first-child {
+      padding-top: 70px !important;
+    }
+  }
+  
+  #navbar header {
+    font-weight: bold;
+    overflow: wrap;
+    font-size: 2rem;
+    position: sticky;
+    padding: 10px;
+    border-bottom: 3px solid #484848;
+    padding-left: 7%;
+  }
+  
+  #navbar ul {
+    padding-left: 0px;
+  }
+  
+  #navbar li {
+    list-style-type: none;
+  }
+  
+  #navbar li a{
+    color: black;
+    position: sticky;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-bottom: 3px solid #484848;
+    padding-left: 7%;
+  }
+  
+  #navbar li a:hover {
+    color: #808080;
+  }
+  
+  #navbar li:first-of-type a {
+    margin-top: -15px;
+  }
+  
+  .main-section {
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+  
+  .main-section header {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+  
+  .main-section p:not(.code-caption){
+    font-size: 1.5rem;
+    width: 70%;
+    overflow: wrap;
+  }
+  
+  .code code {
+    color: white;
+    flex: 1;
+  }
+  
+  .code{
+    background-color: black;
+    display: inline-block;
+    align-items: center; 
+    padding: 8px;
+  }
+  
+  .code pre {
+    margin: 0;
+  }
+  
+  .list-caption {
+    font-size: 1.5rem;
+  }
